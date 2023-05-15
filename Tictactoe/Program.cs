@@ -52,11 +52,11 @@ namespace TicTacToe
 
         static void TakeTurn()
         {
-            Console.WriteLine($"Hráč {AktualniHrac}, zadej řadu (0,1,2):");
-            int row = int.Parse(Console.ReadLine());
+            Console.WriteLine($"Hráč {AktualniHrac}, zadej řadu (1,2,3):");
+            int row = int.Parse(Console.ReadLine()) - 1;
 
-            Console.WriteLine($"Hráč {AktualniHrac}, zadej slopec (0,1,2):");
-            int col = int.Parse(Console.ReadLine());
+            Console.WriteLine($"Hráč {AktualniHrac}, zadej slopec (1,2,3):");
+            int col = int.Parse(Console.ReadLine()) - 1;
 
             if (deska[row, col] != ' ')
             {
